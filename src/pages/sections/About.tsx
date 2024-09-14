@@ -12,7 +12,6 @@ import Css from "@/assets/icons/css3.svg";
 import React from "@/assets/icons/react.svg";
 import Chrome from "@/assets/icons/chrome.svg";
 import Github from "@/assets/icons/github.svg";
-// import IconGradient from "./IconGradient";
 import { useRef } from "react";
 
 type SliderProps = {
@@ -128,7 +127,6 @@ const Slider = ({ reverse }: SliderProps) => {
               key={tool.name + index}
               className="relative flex items-center gap-3 border border-white/20 rounded-md px-2 py-1"
             >
-              {/* <IconGradient component={tool.icon} /> */}
               <span>{tool.name}</span>
             </div>
           )
