@@ -128,7 +128,7 @@ const Slider = ({ reverse }: SliderProps) => {
               key={tool.name + index}
               className="relative flex items-center gap-3 border border-white/20 rounded-md px-2 py-1"
             >
-              <IconGradient component={tool.icon} />
+              {/* <IconGradient component={tool.icon} /> */}
               <span>{tool.name}</span>
             </div>
           )

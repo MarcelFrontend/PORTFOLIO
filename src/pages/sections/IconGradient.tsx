@@ -3,7 +3,7 @@ const IconGradient = ({
 }: {
   component: React.ElementType | undefined;
 }) => {
-  if (!component) return null; // Dodaj sprawdzenie
+  if (!component) return null;
   const Component = component;
   return (
     <div className="relative flex items-center justify-center size-10">
