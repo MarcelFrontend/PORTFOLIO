@@ -12,7 +12,7 @@ import Css from "@/assets/icons/css3.svg";
 import React from "@/assets/icons/react.svg";
 import Chrome from "@/assets/icons/chrome.svg";
 import Github from "@/assets/icons/github.svg";
-import IconGradient from "./IconGradient";
+// import IconGradient from "./IconGradient";
 import { useRef } from "react";
 
 type SliderProps = {
