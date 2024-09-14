@@ -138,7 +138,7 @@ const Slider = ({ reverse }: SliderProps) => {
   );
 };
 
-export const About = () => {
+const About = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const cardStyles =
     "relative border border-white/25 rounded-2xl overflow-hidden";
@@ -226,7 +226,4 @@ export const About = () => {
   );
 };
 
-/*
-
-
-*/
+export default About

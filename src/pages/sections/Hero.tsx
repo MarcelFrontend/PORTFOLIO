@@ -5,7 +5,7 @@ import Star from "@/assets/icons/star.svg"; // gwiazda
 import Plus from "@/assets/icons/sparkle.svg"; //bardziej jak plus
 import grainBg from "@/assets/images/grain.jpg";
 
-export const Hero = () => {
+const Hero = () => {
   const btnStyle = "px-4 py-2 rounded-xl";
   const orbitStyle =
     "absolute border rounded-full border-emerald-300/5 shadow-[0_0_80px_inset] shadow-emerald-300/5";
@@ -178,3 +178,5 @@ export const Hero = () => {
     </section>
   );
 };
+
+export default Hero

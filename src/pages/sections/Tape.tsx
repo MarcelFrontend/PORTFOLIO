@@ -15,7 +15,7 @@ const tapeContent = [
   "responsive",
 ];
 
-export const Tape = () => {
+const Tape = () => {
   return (
     <section className="w-full overflow-hidden my-52 -rotate-3 bg-gradient-to-r from-emerald-300 to-sky-400 text-black">
       <div className="flex flex-1 [mask-image:linear-gradient(to_right,transparent,black_15%,black_85%,transparent)]">
@@ -41,3 +41,4 @@ export const Tape = () => {
     </section>
   );
 };
+export default Tape

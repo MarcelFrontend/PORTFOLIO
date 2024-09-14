@@ -1,5 +1,5 @@
 import Arrow from "@/assets/icons/arrow-up-right.svg";
-export const Contact = () => {
+const Contact = () => {
   return (
     <div className=" mt-52 ">
       <div className="sm:max-w-96 md:max-w-[50rem] lg:max-w-[62rem] mx-auto flex items-center md:justify-between sm:flex-col md:flex-row gap-3 rounded-3xl bg-gradient-to-r from-emerald-400 to-sky-400 py-8 md:px-8">
@@ -21,5 +21,4 @@ export const Contact = () => {
   );
 };
 
-/*
- */
+export default Contact

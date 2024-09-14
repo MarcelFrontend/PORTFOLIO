@@ -39,7 +39,7 @@ const testimonials = [
   },
 ];
 
-export const Testimonials = () => {
+const Testimonials = () => {
   return (
     <section>
       <div className="flex items-center flex-col gap-2 text-center mb-20">
@@ -91,3 +91,4 @@ export const Testimonials = () => {
     </section>
   );
 };
+export default Testimonials

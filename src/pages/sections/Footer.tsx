@@ -1,6 +1,6 @@
 import Arrow from "@/assets/icons/arrow-up-right.svg";
 
-export const Footer = () => {
+const Footer = () => {
   const arrowStyle =
     "sm:h-3 md:h-5 w-auto group-hover:rotate-45 transition-transform";
   const btnStyle =
@@ -18,17 +18,17 @@ export const Footer = () => {
             </button>
           </li>
           <li>
-            <button className={btnStyle} >
+            <button className={btnStyle}>
               Twitter <Arrow className={arrowStyle} />
             </button>
           </li>
           <li>
-            <button className={btnStyle} >
+            <button className={btnStyle}>
               Instagram <Arrow className={arrowStyle} />
             </button>
           </li>
           <li>
-            <button className={btnStyle} >
+            <button className={btnStyle}>
               LinkedIn <Arrow className={arrowStyle} />
             </button>
           </li>
@@ -37,3 +37,5 @@ export const Footer = () => {
     </div>
   );
 };
+
+export default Footer;

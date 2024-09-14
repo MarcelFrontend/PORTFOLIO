@@ -42,7 +42,7 @@ const portfolioProjects = [
   },
 ];
 
-export const Projects = () => {
+const Projects = () => {
   return (
     <section className="relative container flex items-center justify-center flex-col gap-10 my-24 overflow-x-clip">
       <div className="flex items-center flex-col gap-1 text-center">
@@ -103,6 +103,4 @@ export const Projects = () => {
   );
 };
 
-/*
-
-*/
+export default Projects

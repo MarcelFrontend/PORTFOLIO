@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-export const Header = () => {
+const Header = () => {
   const links = [
     { name: "Home", path: "#home" },
     { name: "Projects", path: "#projects" },
@@ -45,3 +45,4 @@ export const Header = () => {
     </header>
   );
 };
+export default Header
