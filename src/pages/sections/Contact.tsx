@@ -1,7 +1,7 @@
 import Arrow from "@/assets/icons/arrow-up-right.svg";
 const Contact = () => {
   return (
-    <div id="contact" className=" mt-52 ">
+    <div id="contact" className="md:py-12">
       <div className="sm:max-w-96 md:max-w-[50rem] lg:max-w-[62rem] mx-auto flex items-center md:justify-between sm:flex-col md:flex-row gap-3 rounded-3xl bg-gradient-to-r from-emerald-400 to-sky-400 py-8 md:px-8">
         <div className="flex items-center md:items-start justify-center flex-col sm:gap-3 md:gap-5 sm:text-center md:text-start text-black">
           <span className="sm:max-w-64 md:max-w-[23rem] lg:max-w-full font-serif sm:text-2xl md:text-4xl font-bold">

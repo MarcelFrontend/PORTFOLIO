@@ -213,7 +213,7 @@ const About = () => {
             style={{ backgroundImage: `url(${map.src})` }}
           >
             <img
-              className="sm:w-24 md:w-[7.5rem] z-10"
+              className="sm:w-24 md:w-[7.5rem] z-[1]"
               src={avatar.src}
               alt="avatar"
             />
