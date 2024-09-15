@@ -6,12 +6,7 @@ import book from "@/assets/images/book-cover.png";
 import map from "@/assets/images/map.png";
 import avatar from "@/assets/images/memoji-smile.png";
 import Star from "@/assets/icons/star.svg";
-import Js from "@/assets/icons/square-js.svg";
-import Html from "@/assets/icons/html5.svg";
-import Css from "@/assets/icons/css3.svg";
-import React from "@/assets/icons/react.svg";
-import Chrome from "@/assets/icons/chrome.svg";
-import Github from "@/assets/icons/github.svg";
+
 import { useRef } from "react";
 
 type SliderProps = {
@@ -20,27 +15,27 @@ type SliderProps = {
 
 const tools = [
   {
-    icon: Js,
+    icon: "fa-square-js",
     name: "Javascript",
   },
   {
-    icon: Html,
+    icon: "fa-html5",
     name: "HTML",
   },
   {
-    icon: Css,
+    icon: "fa-css3-alt",
     name: "CSS3",
   },
   {
-    icon: React,
+    icon: "fa-react",
     name: "React",
   },
   {
-    icon: Chrome,
+    icon: "fa-chrome",
     name: "Chrome",
   },
   {
-    icon: Github,
+    icon: "fa-github",
     name: "Github",
   },
 ];
@@ -112,7 +107,7 @@ const Slider = ({ reverse }: SliderProps) => {
   return (
     <div className="flex">
       <motion.div
-        initial={{ translateX: reverse ? "0" : "-50%" }}
+        initial={{ translateX: reverse ? "0%" : "-50%" }}
         animate={{ translateX: reverse ? "-50%" : "0" }}
         transition={{
           repeat: Infinity,
@@ -127,6 +122,9 @@ const Slider = ({ reverse }: SliderProps) => {
               key={tool.name + index}
               className="relative flex items-center gap-3 border border-white/20 rounded-md px-2 py-1"
             >
+              <i
+                className={`fa-brands ${tool.icon} text-4xl bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 to-sky-400`}
+              ></i>
               <span>{tool.name}</span>
             </div>
           )
@@ -141,7 +139,10 @@ const About = () => {
   const cardStyles =
     "relative border border-white/25 rounded-2xl overflow-hidden";
   return (
-    <section className="container flex items-center flex-col gap-10 my-24 overflow-hidden">
+    <section
+      id="about"
+      className="container flex items-center flex-col gap-10 sm:py-28 md:py-42 overflow-hidden"
+    >
       <div className="flex items-center text-center flex-col gap-3">
         <span className="font-semibold uppercase sm:text-xs md:text-sm lg:text-xl text-transparent bg-clip-text bg-gradient-to-r from-emerald-300 to-sky-400">
           About me
@@ -224,4 +225,4 @@ const About = () => {
   );
 };
 
-export default About
+export default About;

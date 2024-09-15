@@ -15,6 +15,10 @@
   }
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   color: var(--foreground);
   background: var(--background);
@@ -51,4 +55,19 @@ img {
 
 section{
   overflow-x: hidden;
+}
+
+.dot{
+  animation: fading 2s linear 0s infinite normal backwards;
+}
+
+@keyframes fading{
+  0%{
+    scale: 0;
+    opacity: 1;
+  }
+  100%{
+    scale: 2.5;
+    opacity: 0;
+  }
 }

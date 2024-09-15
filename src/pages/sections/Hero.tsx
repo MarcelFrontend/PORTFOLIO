@@ -13,6 +13,7 @@ const Hero = () => {
   const orbitElStyle = "absolute text-emerald-500";
   return (
     <section
+      id="home"
       className="relative flex items-center justify-center flex-col gap-8 [mask-image:linear-gradient(to_bottom,transparent,black_2%,black_98%,transparent)] 
     sm:py-28 md:py-52 overflow-hidden"
     >
@@ -133,17 +134,8 @@ const Hero = () => {
           />
           <div className="flex items-center justify-center gap-3 px-3 sm:py-3 bg-black rounded-lg">
             <div className="relative sm:w-3 sm:h-3 md:w-4 md:h-4 min-[1400px]:w-5 min-[1400px]:h-5 bg-green-500 rounded-full">
-              <motion.div
-                initial={{ scale: 0, opacity: 1 }}
-                animate={{ scale: 2.5, opacity: 0 }}
-                exit={{ scale: 0, opacity: 0 }}
-                transition={{
-                  repeat: Infinity,
-                  ease: "easeInOut",
-                  duration: 2,
-                }}
-                className="absolute inset-0 w-full h-full bg-green-500 rounded-full"
-              />
+              {/* Todo */}
+              <div className="absolute inset-0 w-full h-full bg-green-500 rounded-full dot" />
             </div>
             <span className="sm:text-xs lg:text-lg min-[1400px]:text-2xl">
               Available for new projects
@@ -179,4 +171,4 @@ const Hero = () => {
   );
 };
 
-export default Hero
+export default Hero;

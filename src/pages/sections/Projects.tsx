@@ -44,7 +44,10 @@ const portfolioProjects = [
 
 const Projects = () => {
   return (
-    <section className="relative container flex items-center justify-center flex-col gap-10 my-24 overflow-x-clip">
+    <section
+      id="projects"
+      className="relative container flex items-center justify-center flex-col gap-28 sm:py-28 md:py-42 overflow-x-clip"
+    >
       <div className="flex items-center flex-col gap-1 text-center">
         <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-300 to-sky-400 uppercase my-3 font-medium sm:text-xs lg:text-xl tracking-wide font-sans ">
           Real-world results
@@ -61,7 +64,7 @@ const Projects = () => {
           <div
             key={project.title}
             className="sticky flex items-center justify-center sm:flex-col md:flex-row border border-white/50 rounded-2xl sm:px-6 md:pl-24 pt-6 overflow-hidden bg-gray-800"
-            style={{ top: `calc(${20 * projectIndex + 20}px)` }}
+            style={{ top: `calc(${20 * projectIndex + 30}px)` }}
           >
             <div
               className="absolute inset-0 opacity-5 pointer-events-none -z-20"
