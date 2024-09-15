@@ -17,7 +17,7 @@ const tapeContent = [
 
 const Tape = () => {
   return (
-    <section className="w-full overflow-hidden my-44 md:my-64 -rotate-3 bg-gradient-to-r from-emerald-300 to-sky-400 text-black">
+    <section className="w-full overflow-hidden my-36 md:my-64 -rotate-3 bg-gradient-to-r from-emerald-300 to-sky-400 text-black">
       <div className="flex flex-1 [mask-image:linear-gradient(to_right,transparent,black_15%,black_85%,transparent)]">
         <motion.div
           className="flex  gap-6 md:gap-8 -translate-x-1/2 pr-10"

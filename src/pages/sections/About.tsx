@@ -120,7 +120,7 @@ const Slider = ({ reverse }: SliderProps) => {
           (tool, index) => (
             <div
               key={tool.name + index}
-              className="relative flex items-center gap-3 border border-white/20 rounded-md px-2 py-1"
+              className={`relative flex items-center gap-3 border border-white/20 rounded-md px-2 py-1 ${reverse && "mb-1"}`}
             >
               <i
                 className={`fa-brands ${tool.icon} text-4xl bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 to-sky-400`}

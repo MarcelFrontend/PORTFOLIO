@@ -59,7 +59,7 @@ const Testimonials = () => {
           initial={{ translateX: "-50%" }}
           animate={{ translateX: 0 }}
           transition={{ repeat: Infinity, ease: "linear", duration: 120 }}
-          className="flex gap-20 -translate-x-1/2 pr-20 py-3 lg:py-4"
+          className="flex gap-10 md:gap-20 -translate-x-1/2 pr-20 py-3 lg:py-4"
         >
           {[...testimonials, ...testimonials].map((testimonial, index) => (
             <div

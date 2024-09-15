@@ -133,7 +133,7 @@ const Hero = () => {
             className=" h-28 md:h-32 lg:h-44 w-auto"
           />
           <div className="flex items-center justify-center gap-3 px-3  py-3 bg-black rounded-lg">
-            <div className="relative  w-3  h-3 md:w-4 md:h-4 min-[1400px]:w-5 min-[1400px]:h-5 bg-green-500 rounded-full">
+            <div className="relative w-3 h-3 md:w-4 md:h-4 min-[1400px]:w-5 min-[1400px]:h-5 bg-green-500 rounded-full">
               {/* Todo */}
               <div className="absolute inset-0 w-full h-full bg-green-500 rounded-full dot" />
             </div>
@@ -143,10 +143,10 @@ const Hero = () => {
           </div>
         </div>
         <div className="flex items-center flex-col gap-3">
-          <h1 className=" max-w-lg md:max-w-xl lg:max-w-3xl  text-5xl md:text-6xl lg:text-7xl font-semibold font-serif">
+          <h1 className="max-w-sm md:max-w-xl lg:max-w-3xl  text-5xl md:text-6xl lg:text-7xl font-semibold font-serif">
             Building Exceptional User Experiences
           </h1>
-          <p className="max-w-md lg:max-w-[29rem] min-[1400px]:max-w-[38rem] text-white/50 lg:text-lg min-[1400px]:text-2xl">
+          <p className="max-w-[25rem] lg:max-w-[29rem] min-[1400px]:max-w-[38rem] text-white/50 lg:text-lg min-[1400px]:text-2xl">
             I specialize in transforming designs into functioonal,
             high-performing web applications. Let&apos;s discuss your next
             project.
