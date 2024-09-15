@@ -25,7 +25,7 @@ const Header = () => {
   }, []);
 
   return (
-    <header className="sticky top-0.5 sm:max-w-96 md:max-w-[26rem] lg:max-w-[35rem] mx-auto flex justify-center bg-gray-600/50 border border-white/25 rounded-full select-none p-0.5 md:p-1 lg:p-1.5 backdrop-blur z-10">
+    <header className="sticky top-0.5  max-w-96 md:max-w-[26rem] lg:max-w-[35rem] mx-auto flex justify-center bg-gray-600/50 border border-white/25 rounded-full select-none p-0.5 md:p-1 lg:p-1.5 backdrop-blur z-10">
       <ul className="w-full flex justify-between">
         {links.map((link) => (
           <li

@@ -42,19 +42,19 @@ const testimonials = [
 const Testimonials = () => {
   return (
     <section>
-      <div className="flex items-center flex-col gap-2 text-center mb-20">
+      <div className="flex items-center flex-col gap-2 text-center mb-3">
         <span className="uppercase text-transparent bg-clip-text bg-gradient-to-r from-emerald-300 to-sky-400 font-semibold">
           happy clients
         </span>
-        <h3 className="font-serif sm:text-2xl md:text-5xl font-bold">
+        <h3 className="font-serif  text-2xl md:text-5xl font-bold">
           What Clients Say about Me
         </h3>
-        <p className="text-white/50 sm:text-sm sm:max-w-[21rem] lg:text-2xl lg:max-w-[29rem]">
+        <p className="text-white/50  text-sm  max-w-[21rem] lg:text-2xl lg:max-w-[29rem]">
           Don&apos;t just take my word for it. See what my clients have to say
           about my work.
         </p>
       </div>
-      <div className="sm:max-w-3xl md:max-w-6xl mx-auto flex flex-1 [mask-image:linear-gradient(to_right,transparent,black_20%,black_80%,transparent)]">
+      <div className=" max-w-3xl md:max-w-6xl mx-auto flex flex-1 [mask-image:linear-gradient(to_right,transparent,black_20%,black_80%,transparent)]">
         <motion.div
           initial={{ translateX: "-50%" }}
           animate={{ translateX: 0 }}
@@ -63,7 +63,7 @@ const Testimonials = () => {
         >
           {[...testimonials, ...testimonials].map((testimonial, index) => (
             <div
-              className="sm:min-w-96 md:min-w-[27rem] lg:min-w-[34rem] relative flex  flex-col gap-4 border border-white/50 hover:border-white/75 rounded-3xl overflow-hidden bg-gray-800 z-0 px-6 py-5 hover:-rotate-3 transition-transform transition-colors"
+              className=" min-w-96 md:min-w-[27rem] lg:min-w-[34rem] relative flex  flex-col gap-4 border border-white/50 hover:border-white/75 rounded-3xl overflow-hidden bg-gray-800 z-0 px-6 py-5 hover:-rotate-3 transition-transform transition-colors"
               key={testimonial.name + index}
             >
               <div
@@ -78,7 +78,7 @@ const Testimonials = () => {
                 />
                 <div>
                   <span className="block lg:text-3xl">{testimonial.name}</span>
-                  <span className="sm:text-xs lg:text-xl text-white/50">
+                  <span className=" text-xs lg:text-xl text-white/50">
                     {testimonial.position}
                   </span>
                 </div>

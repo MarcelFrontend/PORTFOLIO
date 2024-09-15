@@ -15,7 +15,7 @@ const Hero = () => {
     <section
       id="home"
       className="relative flex items-center justify-center flex-col gap-8 [mask-image:linear-gradient(to_bottom,transparent,black_2%,black_98%,transparent)] 
-    sm:py-10 md:py-40 overflow-hidden"
+     py-10 md:py-40 overflow-hidden"
     >
       {/* 4 obwody, 4 gwiazdy, 3 plusy i 3 planety */}
       <div
@@ -130,20 +130,20 @@ const Hero = () => {
         <div className="flex items-center justify-center flex-col">
           <img
             src={headerAvatar.src}
-            className="sm:h-28 md:h-32 lg:h-44 w-auto"
+            className=" h-28 md:h-32 lg:h-44 w-auto"
           />
-          <div className="flex items-center justify-center gap-3 px-3 sm:py-3 bg-black rounded-lg">
-            <div className="relative sm:w-3 sm:h-3 md:w-4 md:h-4 min-[1400px]:w-5 min-[1400px]:h-5 bg-green-500 rounded-full">
+          <div className="flex items-center justify-center gap-3 px-3  py-3 bg-black rounded-lg">
+            <div className="relative  w-3  h-3 md:w-4 md:h-4 min-[1400px]:w-5 min-[1400px]:h-5 bg-green-500 rounded-full">
               {/* Todo */}
               <div className="absolute inset-0 w-full h-full bg-green-500 rounded-full dot" />
             </div>
-            <span className="sm:text-xs lg:text-lg min-[1400px]:text-2xl">
+            <span className=" text-xs lg:text-lg min-[1400px]:text-2xl">
               Available for new projects
             </span>
           </div>
         </div>
         <div className="flex items-center flex-col gap-3">
-          <h1 className="sm:max-w-lg md:max-w-xl lg:max-w-3xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold font-serif">
+          <h1 className=" max-w-lg md:max-w-xl lg:max-w-3xl  text-5xl md:text-6xl lg:text-7xl font-semibold font-serif">
             Building Exceptional User Experiences
           </h1>
           <p className="max-w-md lg:max-w-[29rem] min-[1400px]:max-w-[38rem] text-white/50 lg:text-lg min-[1400px]:text-2xl">
@@ -152,15 +152,15 @@ const Hero = () => {
             project.
           </p>
         </div>
-        <div className="flex gap-4 sm:flex-col md:flex-row ">
+        <div className="flex gap-4  flex-col md:flex-row ">
           <button
-            className={`flex items-center gap-2 sm:text-xl md:text-2xl lg:text-3xl border-2 border-white/25 font-semibold ${btnStyle} group hover:border-white duration-300`}
+            className={`flex items-center gap-2  text-xl md:text-2xl lg:text-3xl border-2 border-white/25 font-semibold ${btnStyle} group hover:border-white duration-300`}
           >
             Explore My Work
-            <ArrowDown className="sm:h-3 md:h-4 lg:h-6 w-auto group-hover:-rotate-90 transition-transform duration-500" />
+            <ArrowDown className=" h-3 md:h-4 lg:h-6 w-auto group-hover:-rotate-90 transition-transform duration-500" />
           </button>
           <button
-            className={`sm:text-xl md:text-2xl lg:text-3xl bg-emerald-500 text-black font-semibold ${btnStyle} hover:bg-transparent hover:text-emerald-300 border-2 border-emerald-500 duration-200`}
+            className={` text-xl md:text-2xl lg:text-3xl bg-emerald-500 text-black font-semibold ${btnStyle} hover:bg-transparent hover:text-emerald-300 border-2 border-emerald-500 duration-200`}
           >
             <span className="mr-2">👋</span>
             Let&apos;s Connect

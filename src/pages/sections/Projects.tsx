@@ -46,16 +46,16 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="relative container flex items-center justify-center flex-col gap-28 sm:pt-28 md:pt-42 overflow-x-clip"
+      className="relative container flex items-center justify-center flex-col gap-28  pt-28 md:pt-42 overflow-x-clip"
     >
       <div className="flex items-center flex-col gap-1 text-center">
-        <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-300 to-sky-400 uppercase my-3 font-medium sm:text-xs lg:text-xl tracking-wide font-sans ">
+        <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-300 to-sky-400 uppercase my-3 font-medium  text-xs lg:text-xl tracking-wide font-sans ">
           Real-world results
         </span>
-        <h2 className="font-bold font-serif sm:text-5xl md:text-6xl lg:text-7xl">
+        <h2 className="font-bold font-serif  text-5xl md:text-6xl lg:text-7xl">
           Featured Projects
         </h2>
-        <p className="sm:max-w-[25rem] lg:max-w-[32rem] sm:text-sm md:text-base lg:text-2xl text-white/50 ">
+        <p className=" max-w-[25rem] lg:max-w-[32rem]  text-sm md:text-base lg:text-2xl text-white/50 ">
           See how I transformed concepts into engaging digital experiences.
         </p>
       </div>
@@ -63,8 +63,8 @@ const Projects = () => {
         {portfolioProjects.map((project, projectIndex) => (
           <div
             key={project.title}
-            className="sticky flex items-center justify-center sm:flex-col md:flex-row border border-white/50 rounded-2xl sm:px-6 md:pl-24 pt-6 overflow-hidden bg-gray-800"
-            style={{ top: `calc(${20 * projectIndex + 30}px)` }}
+            className="sticky flex items-center justify-center  flex-col md:flex-row border border-white/50 rounded-2xl  px-6 md:pl-24 pt-6 overflow-hidden bg-gray-800"
+            style={{ top: `calc(${10 * projectIndex + 30}px)` }}
           >
             <div
               className="absolute inset-0 opacity-5 pointer-events-none -z-20"
@@ -74,28 +74,28 @@ const Projects = () => {
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-300 to-sky-400 uppercase text-xs lg:text-xl font-bold tracking-wider">
                 {project.company} • {project.year}
               </span>
-              <span className="sm:text-2xl lg:max-w-md lg:text-5xl font-bold font-serif">
+              <span className=" text-2xl lg:max-w-md lg:text-5xl font-bold font-serif">
                 {project.title}
               </span>
-              <hr className="sm:my-2 lg:my-4 border-white/50" />
+              <hr className=" my-2 lg:my-4 border-white/50" />
               <ul className="text-white/50">
                 {project.results.map((result, index) => (
                   <li
                     key={index}
-                    className="flex items-center gap-2 sm:my-2.5 sm:text-xs md:text-sm lg:text-2xl"
+                    className="flex items-center gap-2  my-2.5  text-xs md:text-sm lg:text-2xl"
                   >
                     <Check className="h-5 lg:h-7 w-auto" />
                     {result.title}
                   </li>
                 ))}
               </ul>
-              <button className="md:max-w-44 lg:max-w-[17rem] flex items-center justify-center gap-2 font-bold rounded-md lg:rounded-xl py-2 my-5 sm:text-lg lg:text-3xl bg-white hover:bg-gray-300 transition-all text-black group active:scale-95 ">
+              <button className="md:max-w-44 lg:max-w-[17rem] flex items-center justify-center gap-2 font-bold rounded-md lg:rounded-xl py-2 my-5  text-lg lg:text-3xl bg-white hover:bg-gray-300 transition-all text-black group active:scale-95 ">
                 Visit Live Site{" "}
-                <TiltedArrow className="sm:h-4 lg:h-6 w-auto group-hover:rotate-45 transition-transform" />
+                <TiltedArrow className=" h-4 lg:h-6 w-auto group-hover:rotate-45 transition-transform" />
               </button>
             </div>
             <img
-              className="sm:h-48 md:h-80 lg:h-96 w-auto relative sm:right-0 md:-right-16 lg:-right-20 sm:-bottom-4 md:-bottom-14 lg:-bottom-14"
+              className=" h-48 md:h-80 lg:h-96 w-auto relative  right-0 md:-right-16 lg:-right-20  -bottom-4 md:-bottom-14 lg:-bottom-14"
               src={project.image.src}
               alt={project.company}
             />

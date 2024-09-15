@@ -17,10 +17,10 @@ const tapeContent = [
 
 const Tape = () => {
   return (
-    <section className="w-full overflow-hidden md:my-64 -rotate-3 bg-gradient-to-r from-emerald-300 to-sky-400 text-black">
+    <section className="w-full overflow-hidden my-44 md:my-64 -rotate-3 bg-gradient-to-r from-emerald-300 to-sky-400 text-black">
       <div className="flex flex-1 [mask-image:linear-gradient(to_right,transparent,black_15%,black_85%,transparent)]">
         <motion.div
-          className="flex sm:gap-6 md:gap-8 -translate-x-1/2 pr-10"
+          className="flex  gap-6 md:gap-8 -translate-x-1/2 pr-10"
           initial={{ translateX: "-50%" }}
           animate={{ translateX: "0" }}
           transition={{ repeat: Infinity, ease: "linear", duration: 60 }}
@@ -28,12 +28,12 @@ const Tape = () => {
           {[...tapeContent, ...tapeContent].map((content, index) => (
             <div
               key={index}
-              className="flex items-center sm:gap-6 md:gap-8 sm:py-0.5 md:py-2"
+              className="flex items-center  gap-6 md:gap-8  py-0.5 md:py-2"
             >
-              <span className="uppercase whitespace-nowrap font-bold sm:text-xs md:text-xl lg:text-3xl">
+              <span className="uppercase whitespace-nowrap font-bold  text-xs md:text-xl lg:text-3xl">
                 {content}
               </span>
-              <Star className="sm:size-9 lg:size-12 -rotate-6" />
+              <Star className=" size-9 lg:size-12 -rotate-6" />
             </div>
           ))}
         </motion.div>
