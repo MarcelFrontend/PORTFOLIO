@@ -141,7 +141,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="container flex items-center flex-col gap-10 sm:py-28 md:py-42 overflow-hidden"
+      className="container flex items-center flex-col gap-10 sm:pt-28 md:pt-42 overflow-hidden"
     >
       <div className="flex items-center text-center flex-col gap-3">
         <span className="font-semibold uppercase sm:text-xs md:text-sm lg:text-xl text-transparent bg-clip-text bg-gradient-to-r from-emerald-300 to-sky-400">

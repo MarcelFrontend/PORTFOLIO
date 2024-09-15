@@ -46,7 +46,7 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="relative container flex items-center justify-center flex-col gap-28 sm:py-28 md:py-42 overflow-x-clip"
+      className="relative container flex items-center justify-center flex-col gap-28 sm:pt-28 md:pt-42 overflow-x-clip"
     >
       <div className="flex items-center flex-col gap-1 text-center">
         <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-300 to-sky-400 uppercase my-3 font-medium sm:text-xs lg:text-xl tracking-wide font-sans ">
