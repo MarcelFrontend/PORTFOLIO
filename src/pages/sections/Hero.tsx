@@ -15,7 +15,7 @@ const Hero = () => {
     <section
       id="home"
       className="relative flex items-center justify-center flex-col gap-8 [mask-image:linear-gradient(to_bottom,transparent,black_2%,black_98%,transparent)] 
-     py-10 md:py-40 overflow-hidden bg-red-500"
+     py-10 md:py-40 overflow-hidden"
     >
       {/* 4 obwody, 4 gwiazdy, 3 plusy i 3 planety */}
       <div
