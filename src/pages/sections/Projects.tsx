@@ -17,6 +17,7 @@ const portfolioProjects = [
       { title: "Increased mobile traffic by 35%" },
     ],
     image: darkSaasLandingPage,
+    link: "https://another-saas-page.vercel.app",
   },
   {
     company: "Innovative Co",
@@ -28,6 +29,7 @@ const portfolioProjects = [
       { title: "Increased brand awareness by 15%" },
     ],
     image: lightSaasLandingPage,
+    link: "https://saas-page-nine.vercel.app",
   },
   {
     company: "Quantum Dynamics",
@@ -39,6 +41,7 @@ const portfolioProjects = [
       { title: "Increased mobile traffic by 35%" },
     ],
     image: aiStartupLandingPage,
+    link: "https://ai-startup-pi.vercel.app",
   },
 ];
 
@@ -89,10 +92,10 @@ const Projects = () => {
                   </li>
                 ))}
               </ul>
-              <button className="md:max-w-44 lg:max-w-[17rem] flex items-center justify-center gap-2 font-bold rounded-md lg:rounded-xl py-2 my-5  text-lg lg:text-3xl bg-white hover:bg-gray-300 transition-all text-black group active:scale-95 ">
-                Visit Live Site{" "}
+              <a href={project.link} className="md:max-w-44 lg:max-w-[17rem] flex items-center justify-center gap-2 font-bold rounded-md lg:rounded-xl py-2 my-5  text-lg lg:text-3xl bg-white hover:bg-gray-300 transition-all text-black group active:scale-95 ">
+                Visit Live Site
                 <TiltedArrow className=" h-4 lg:h-6 w-auto group-hover:rotate-45 transition-transform" />
-              </button>
+              </a>
             </div>
             <img
               className=" h-48 md:h-80 lg:h-96 w-auto relative  right-0 md:-right-16 lg:-right-20  -bottom-4 md:-bottom-14 lg:-bottom-14"
@@ -106,4 +109,4 @@ const Projects = () => {
   );
 };
 
-export default Projects
+export default Projects;

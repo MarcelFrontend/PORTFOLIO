@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 import ArrowDown from "@/assets/icons/arrow-down.svg";
 import headerAvatar from "@/assets/images/memoji-computer.png";
-import Star from "@/assets/icons/star.svg"; // gwiazda
-import Plus from "@/assets/icons/sparkle.svg"; //bardziej jak plus
+import Star from "@/assets/icons/star.svg";
+import Plus from "@/assets/icons/sparkle.svg";
 import grainBg from "@/assets/images/grain.jpg";
 
 const Hero = () => {
@@ -17,7 +17,6 @@ const Hero = () => {
       className="relative flex items-center justify-center flex-col gap-8 [mask-image:linear-gradient(to_bottom,transparent,black_2%,black_98%,transparent)] 
      py-10 md:py-40 overflow-hidden"
     >
-      {/* 4 obwody, 4 gwiazdy, 3 plusy i 3 planety */}
       <div
         className="absolute inset-0 -z-10 opacity-5"
         style={{ backgroundImage: `url(${grainBg.src})` }}
@@ -134,10 +133,9 @@ const Hero = () => {
           />
           <div className="flex items-center justify-center gap-3 px-3  py-3 bg-black rounded-lg">
             <div className="relative w-3 h-3 md:w-4 md:h-4 min-[1400px]:w-5 min-[1400px]:h-5 bg-green-500 rounded-full">
-              {/* Todo */}
               <div className="absolute inset-0 w-full h-full bg-green-500 rounded-full dot" />
             </div>
-            <span className=" text-xs lg:text-lg min-[1400px]:text-2xl">
+            <span className="text-xs lg:text-lg min-[1400px]:text-2xl">
               Available for new projects
             </span>
           </div>
