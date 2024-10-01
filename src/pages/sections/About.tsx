@@ -217,7 +217,7 @@ const About = () => {
               src={avatar.src}
               alt="avatar"
             />
-            <div className="absolute  w-24 md:w-28  h-24 md:h-28 border-2 border-gray-600/50 rounded-full bg-gradient-to-r from-emerald-400 to-sky-400 z-0"></div>
+            <div className="absolute w-24 md:w-28 h-24 md:h-28 border-2 border-gray-600/50 rounded-full bg-gradient-to-r from-emerald-400 to-sky-400 z-0"></div>
           </div>
         </div>
       </div>
